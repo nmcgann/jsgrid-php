@@ -27,7 +27,7 @@ class CountryRepository {
         foreach($rows as $row) {
             array_push($result, $this->read($row));
         }
-        return $result;
+        return [true, $result];
     }
 
 }
